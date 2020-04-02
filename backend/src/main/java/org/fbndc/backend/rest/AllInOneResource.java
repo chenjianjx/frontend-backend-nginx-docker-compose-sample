@@ -9,11 +9,12 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 
-@RequestMapping(value = "/hello", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = RestContants.ROOT_PATH, produces = MediaType.APPLICATION_JSON_VALUE)
 @RestController
-public class HelloWorldResource {
+public class AllInOneResource {
 
-    @GetMapping(value = "/server-time", produces = MediaType.TEXT_PLAIN_VALUE)
+
+    @GetMapping(value = "/time", produces = MediaType.TEXT_PLAIN_VALUE)
     public String getServerTime() {
         return LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME);
     }
