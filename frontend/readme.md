@@ -1,7 +1,7 @@
 # Run as a docker container
 
 ```
-docker image build  -f ./docker/Dockerfile  --tag fbndc-frontend:1.0-SNAPSHOT .
+docker image build  --tag fbndc-frontend:1.0-SNAPSHOT .
 ```
 
 Then 

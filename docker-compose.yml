@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+
+  backend:  #Test url:  http://localhost:8080/api/foo
+    build: ./backend
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+
+  nginx:
+    build: ./nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - dockerhost
+
+  dockerhost:
+    image: qoomon/docker-host
+    cap_add: [ 'NET_ADMIN', 'NET_RAW' ]
+    restart: on-failure
