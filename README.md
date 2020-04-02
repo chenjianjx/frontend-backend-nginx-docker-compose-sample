@@ -32,8 +32,8 @@ And
 * If I change the code in backend, there is a way for me push the change into running
 
 ### If I am a frontend developer
-* If I change any javascript code, I can see update in the website 
-* I can force the above to happen if it sometimes doesn't 
+* If I change any javascript code, I can see update in the website, i.e. hot deployment
+* I can force the above to happen if it sometimes does not 
 * If I change package.json, there is a way to clean up node_modules, rebuild the frontend and rerun the frontend
 
 
@@ -42,4 +42,4 @@ And
 
 
 
-# How is it built? 
+# How was this sample built? 
