@@ -43,3 +43,7 @@ And
 
 
 # How was this sample built? 
+
+* Create the backend using spring boot
+* Create the frontend using create-react-app
+* Everything else can be found in the the code
