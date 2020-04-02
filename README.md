@@ -44,6 +44,6 @@ And
 
 # How was this sample built? 
 
-* Create the backend using spring boot
+* Create the backend using spring boot (maven + spring web + war) 
 * Create the frontend using create-react-app
 * Everything else can be found in the the code

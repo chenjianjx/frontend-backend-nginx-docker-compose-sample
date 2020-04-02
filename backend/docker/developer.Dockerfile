@@ -1,8 +1,8 @@
-FROM maven:3.6-jdk-8-alpine
+FROM tomcat:8.5.53-jdk8-openjdk
+COPY target/fbndc-backend-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 
-COPY target/fbndc-backend-0.0.1-SNAPSHOT.jar /usr/app/
-WORKDIR /usr/app
+ENV JPDA_ADDRESS="8000"
+ENV JPDA_TRANSPORT="dt_socket"
 
-EXPOSE 8080
-
-CMD ["java", "-jar", "fbndc-backend-0.0.1-SNAPSHOT.jar"]
+EXPOSE 8080 8000
+ENTRYPOINT ["catalina.sh", "jpda", "run"]

@@ -18,4 +18,10 @@ public class AllInOneResource {
     public String getServerTime() {
         return LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME);
     }
+
+
+    @GetMapping(value = "/foo", produces = MediaType.TEXT_PLAIN_VALUE)
+    public String foo() {
+        return "bar";
+    }
 }
