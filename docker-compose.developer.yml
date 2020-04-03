@@ -1,0 +1,32 @@
+version: "3.7"
+
+services:
+
+  backend:  #Test url:  http://localhost:8080/api/foo
+    build:
+      context: ./backend
+      dockerfile: developer.Dockerfile
+    volumes:
+      - type: bind
+        source: ./backend
+        target: /usr/code/backend
+      - type: bind
+        source: ~/.m2
+        target: /root/.m2
+    ports:
+      - "8080:8080"
+      - "8000:8000"  # for remote debug
+    container_name: fbndc-developer-backend
+
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: developer.Dockerfile
+    volumes:
+      - type: bind
+        source: ./frontend
+        target: /usr/code/frontend
+    ports:
+      - "3000:3000"
+    container_name: fbndc-developer-frontend
