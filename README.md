@@ -14,6 +14,10 @@
 
 # How it solves the problem
 
+* [I'm a backend developer](#im-a-backend-developer)
+* [I'm a frontend developer](#im-a-frontend-developer)
+* [I'm a full-stack developer](#im-a-full-stack-developer)
+
 
 ## I'm a tester or a business stakeholder
 
