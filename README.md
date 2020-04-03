@@ -1,7 +1,3 @@
-# Note: Still Under Construction
-# Note: Still Under Construction
-# Note: Still Under Construction
-
 # What it is
 
 **Problem** 
@@ -12,7 +8,9 @@
  
 **This sample provides an answer with docker**. You can run the systems **using or not using docker commands**, depending on your role.
 
-Note:  the appropriate scenarios are **local development** and **local test**.  This solution is not for production.
+**Disclaimer 1**:  the appropriate scenarios are **local development** and **local test**.  This solution is not for production.
+
+**Disclaimer 2**:  It **may not work appropriately in some versions of MacOS or Linux**, due to some firewall configs in these OS
 
 # How it solves the problem
 
@@ -33,6 +31,7 @@ Then go to http://localhost
 
 
 ## I'm a backend developer
+
 
 ### Constraints
 * I don't know much about frontend and I don't want to install npm/nodejs  
