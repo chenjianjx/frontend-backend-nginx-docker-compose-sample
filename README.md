@@ -10,7 +10,7 @@
 
 **Disclaimer 1**:  the appropriate scenarios are **local development** and **local test**.  This solution is not for production.
 
-**Disclaimer 2**:  It **may not work appropriately in some versions of MacOS or Linux**, due to some firewall configs in these OS
+**Disclaimer 2**:  It **may not work appropriately in some versions of MacOS**, due to some firewall configs in these systems
 
 # How it solves the problem
 
