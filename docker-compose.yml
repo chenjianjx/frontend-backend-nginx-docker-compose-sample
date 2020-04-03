@@ -6,20 +6,25 @@ services:
     build: ./backend
     ports:
       - "8080:8080"
+    container_name: fbndc-backend
 
   frontend:
     build: ./frontend
     ports:
       - "3000:3000"
+    container_name: fbndc-frontend
 
   nginx:
     build: ./nginx
     ports:
       - "80:80"
+    container_name: fbndc-nginx
     depends_on:
       - dockerhost
 
-  dockerhost:
+
+  dockerhost:  #See:  https://github.com/qoomon/docker-host
     image: qoomon/docker-host
     cap_add: [ 'NET_ADMIN', 'NET_RAW' ]
     restart: on-failure
+    container_name: fbndc-dockerhost

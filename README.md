@@ -49,7 +49,9 @@ cd backend
 mvn spring-boot:run -Dagentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8000
 ```
 
-Alternatively, I can just use IDE or any other feasible way to start the backend
+Alternatively, I can start it with an IDE or any other feasible way in Java
+
+Then check the backend: http://localhost:8080/api/foo
 
 ####  Finally visit the system 
 
